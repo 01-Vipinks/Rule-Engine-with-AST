@@ -22,12 +22,12 @@ Before running this project, ensure you have the following installed:
 ## SETUP INSTRUCTIONS
 
 1. Clone the Repository:  
-git clone https://github.com/your-username/rule-engine-ast.git  
+    git clone https://github.com/your-username/rule-engine-ast.git  
 cd rule-engine-ast
 2. Create a Virtual Environment  
 python -m venv venv  
-source venv/bin/activate  # For Linux/Mac  
-venv\Scripts\activate      # For Windows  
+source venv/bin/activate   # For Linux/Mac  
+venv\Scripts\activate       # For Windows  
 3. Install Dependencies  
 pip install -r requirements.txt  
 4. Ensure MongoDB is Running  
