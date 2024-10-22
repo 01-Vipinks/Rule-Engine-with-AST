@@ -25,18 +25,18 @@ Before running this project, ensure you have the following installed:
    
     git clone https://github.com/your-username/rule-engine-ast.git  
     cd rule-engine-ast
-3. Create a Virtual Environment:
+2. Create a Virtual Environment:
      
     python -m venv venv  
     source venv/bin/activate    # For Linux/Mac  
     venv\Scripts\activate       # For Windows  
-5. Install Dependencies:
+3. Install Dependencies:
      
     pip install -r requirements.txt  
-7. Ensure MongoDB is Running:
+4. Ensure MongoDB is Running:
      
     Make sure MongoDB is running locally at mongodb://localhost:27017/.  
-9. Run the Flask Application:
+5. Run the Flask Application:
       
     python app.py  
 The Flask server will start on http://127.0.0.1:5000.
@@ -75,7 +75,7 @@ Response:
   "result": true
 }
 
-##### API Endpoints (Simplified)
+### API Endpoints (Simplified)
 Create Rule: /create_rule
 
 Method: POST
@@ -88,7 +88,7 @@ Method: POST
 Payload: { "user_data": {"age": 35, "department": "Sales"} }
 Response: { "result": true/false }
 
-###### Non-Functional Requirements
+#### Non-Functional Requirements
 1. SECURITY
     -Input Validation: All inputs from users are validated to prevent injection attacks, such as invalid characters or improper data types. Validation is enforced in API endpoints to ensure only well-formed rules are processed.
     -MongoDB Security: Ensure MongoDB is secured with authentication if deployed in production. Using environment variables for sensitive data like the MongoDB URI is encouraged.
