@@ -46,11 +46,11 @@ The Flask server will start on http://127.0.0.1:5000.
   &nbsp;"rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"  
 &nbsp;}  
 
-Response:  
-{  
-  "message": "Rule created",  
-  "rule_id": "<MongoDB ObjectID>"  
-}  
+&emsp;Response:  
+&emsp;{  
+  &emsp;"message": "Rule created",  
+  &emsp;"rule_id": "<MongoDB ObjectID>"  
+&emsp;}  
 
 2. Evaluate Rule  
 &nbsp;Endpoint: /evaluate_rule/<rule_id>  
@@ -65,10 +65,10 @@ Response:
   &nbsp;}  
 &nbsp;}  
 
-Response:  
-{  
-  "result": true  
-}  
+&emsp;Response:  
+&emsp;{  
+  &emsp;"result": true  
+&emsp;}  
 
 ### API Endpoints (Simplified)
 Create Rule: /create_rule  
