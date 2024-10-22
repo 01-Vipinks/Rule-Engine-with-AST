@@ -40,22 +40,24 @@ The Flask server will start on http://127.0.0.1:5000.
 1. Create Rule  
 &nbsp;Endpoint: /create_rule  
 &nbsp;Method: POST  
-&nbsp;Description: Creates a new rule from the provided rule string and stores it in MongoDB.  
+&nbsp;Description: Creates a new rule from the provided rule string and stores it in MongoDB.
+
 &nbsp;Request Payload:  
 &nbsp;{  
   &nbsp;"rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"  
 &nbsp;}  
 
 &emsp; &emsp;Response:  
-&emsp;{  
-  &emsp;"message": "Rule created",  
-  &emsp;"rule_id": "<MongoDB ObjectID>"  
-&emsp;}  
+&emsp; &emsp;{  
+  &emsp; &emsp;"message": "Rule created",  
+  &emsp; &emsp;"rule_id": "<MongoDB ObjectID>"  
+&emsp; &emsp;}  
 
 2. Evaluate Rule  
 &nbsp;Endpoint: /evaluate_rule/<rule_id>  
 &nbsp;Method: POST  
-&nbsp;Description: Evaluates a specific rule stored in the database against the provided user data.  
+&nbsp;Description: Evaluates a specific rule stored in the database against the provided user data.
+
 &nbsp;Request Payload:  
 &nbsp;{  
   &nbsp;"user_data": {  
@@ -65,10 +67,10 @@ The Flask server will start on http://127.0.0.1:5000.
   &nbsp;}  
 &nbsp;}  
 
-&emsp;Response:  
-&emsp;{  
-  &emsp;"result": true  
-&emsp;}  
+&emsp; &emsp;Response:  
+&emsp; &emsp;{  
+  &emsp; &emsp;"result": true  
+&emsp; &emsp;}  
 
 ### API Endpoints (Simplified)
 Create Rule: /create_rule  
