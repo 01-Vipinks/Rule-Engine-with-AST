@@ -6,7 +6,7 @@ The Rule Engine project allows users to create dynamic rules using custom condit
 
 FEATURES
 
-Create Custom Rules: Users can define rules involving conditions like age, department, salary, etc.
+* Create Custom Rules: Users can define rules involving conditions like age, department, salary, etc.
 Evaluate Rules: Rules can be evaluated against user data to check if conditions are met.
 MongoDB Storage: The rules are stored in MongoDB in a structured format (AST), enabling easy retrieval and evaluation.
 Error Handling: The system provides feedback for invalid rules or missing data.
