@@ -11,14 +11,15 @@ FEATURES
 * MongoDB Storage: The rules are stored in MongoDB in a structured format (AST), enabling easy retrieval and evaluation.
 * Error Handling: The system provides feedback for invalid rules or missing data.
 
-## PREREQUISITES
-Before running this project, ensure you have the following installed:
-    Python 3.8+
-    MongoDB (Running locally or using a cloud instance like MongoDB Atlas)
-    Postman (Optional, for testing API requests)
-    Git (For version control and pushing to GitHub)
+PREREQUISITES
 
-### SETUP INSTRUCTIONS
+Before running this project, ensure you have the following installed:
+* Python 3.8+
+* MongoDB (Running locally or using a cloud instance like MongoDB Atlas)
+* Postman/Thunderclient (Optional, for testing API requests)
+* Git (For version control and pushing to GitHub)
+
+## SETUP INSTRUCTIONS
 
 1. Clone the Repository
 git clone https://github.com/your-username/rule-engine-ast.git
