@@ -1,9 +1,9 @@
 # RULE ENGINE WITH ABSTRACT SYNTAX TREE (AST)
 
-## OBJECTIVE
+OBJECTIVE
     The Rule Engine project allows users to create dynamic rules using custom conditions and evaluate those rules against user data. The rules are parsed and represented as Abstract Syntax Trees (AST), enabling flexible rule manipulation and evaluation. The system is built using Python's Flask framework for the backend, MongoDB for storing rules, and Postman or a front-end form for creating and testing rules.
 
-## FEATURES
+FEATURES
     Create Custom Rules: Users can define rules involving conditions like age, department, salary, etc.
     Evaluate Rules: Rules can be evaluated against user data to check if conditions are met.
     MongoDB Storage: The rules are stored in MongoDB in a structured format (AST), enabling easy retrieval and evaluation.
