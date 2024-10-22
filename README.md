@@ -22,8 +22,8 @@ Before running this project, ensure you have the following installed:
 ## SETUP INSTRUCTIONS
 
 1. Clone the Repository:  
-&nbsp; * git clone https://github.com/your-username/rule-engine-ast.git  
-&nbsp; * cd rule-engine-ast
+&nbsp;- git clone https://github.com/your-username/rule-engine-ast.git  
+&nbsp;- cd rule-engine-ast
 2. Create a Virtual Environment:
      
     python -m venv venv  
