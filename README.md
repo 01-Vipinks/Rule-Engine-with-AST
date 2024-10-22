@@ -42,10 +42,10 @@ The Flask server will start on http://127.0.0.1:5000.
 &nbsp;Method: POST  
 &nbsp;Description: Creates a new rule from the provided rule string and stores it in MongoDB.
 
-&nbsp;Request Payload:  
-&nbsp;{  
-  &nbsp;"rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"  
-&nbsp;}  
+&emsp; &emsp;Request Payload:  
+&emsp; &emsp;{  
+  &emsp; &emsp;"rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"  
+&emsp; &emsp;}  
 
 &emsp; &emsp;Response:  
 &emsp; &emsp;{  
@@ -58,14 +58,14 @@ The Flask server will start on http://127.0.0.1:5000.
 &nbsp;Method: POST  
 &nbsp;Description: Evaluates a specific rule stored in the database against the provided user data.
 
-&nbsp;Request Payload:  
-&nbsp;{  
-  &nbsp;"user_data": {  
-    &nbsp;"age": 35,  
-    &nbsp;"department": "Sales",  
-    &nbsp;"salary": 60000  
-  &nbsp;}  
-&nbsp;}  
+&emsp; &emsp;Request Payload:  
+&emsp; &emsp;{  
+  &emsp; &emsp;"user_data": {  
+    &emsp; &emsp;"age": 35,  
+    &emsp; &emsp;"department": "Sales",  
+    &emsp; &emsp;"salary": 60000  
+  &emsp; &emsp;}  
+&emsp; &emsp;}  
 
 &emsp; &emsp;Response:  
 &emsp; &emsp;{  
@@ -75,15 +75,15 @@ The Flask server will start on http://127.0.0.1:5000.
 ### API Endpoints (Simplified)
 Create Rule: /create_rule  
 
-Method: POST  
-Payload: { "rule_string": "(age > 30 AND department = 'Sales')" }  
-Response: { "rule_id": "<rule_id>" }  
+&nbsp;Method: POST  
+&nbsp;Payload: { "rule_string": "(age > 30 AND department = 'Sales')" }  
+&nbsp;Response: { "rule_id": "<rule_id>" }  
 
 Evaluate Rule: /evaluate_rule/<rule_id>  
 
-Method: POST  
-Payload: { "user_data": {"age": 35, "department": "Sales"} }  
-Response: { "result": true/false }  
+&nbsp;Method: POST  
+&nbsp;Payload: { "user_data": {"age": 35, "department": "Sales"} }  
+&nbsp;Response: { "result": true/false }  
 
 #### Non-Functional Requirements
 1. SECURITY
