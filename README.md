@@ -42,51 +42,51 @@ Before running this project, ensure you have the following installed:
 The Flask server will start on http://127.0.0.1:5000.
 
 ### API ENPOINTS
-1. Create Rule
-    Endpoint: /create_rule
-    Method: POST
-    Description: Creates a new rule from the provided rule string and stores it in MongoDB.
-Request Payload:
-{
-  "rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"
-}
+1. Create Rule  
+    Endpoint: /create_rule  
+    Method: POST  
+    Description: Creates a new rule from the provided rule string and stores it in MongoDB.  
+Request Payload:  
+{  
+  "rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"  
+}  
 
-Response:
-{
-  "message": "Rule created",
-  "rule_id": "<MongoDB ObjectID>"
-}
+Response:  
+{  
+  "message": "Rule created",  
+  "rule_id": "<MongoDB ObjectID>"  
+}  
 
-2. Evaluate Rule
-    Endpoint: /evaluate_rule/<rule_id>
-    Method: POST
-    Description: Evaluates a specific rule stored in the database against the provided user data.
-Request Payload:
-{
-  "user_data": {
-    "age": 35,
-    "department": "Sales",
-    "salary": 60000
-  }
-}
+2. Evaluate Rule  
+    Endpoint: /evaluate_rule/<rule_id>  
+    Method: POST  
+    Description: Evaluates a specific rule stored in the database against the provided user data.  
+Request Payload:  
+{  
+  "user_data": {  
+    "age": 35,  
+    "department": "Sales",  
+    "salary": 60000  
+  }  
+}  
 
-Response:
-{
-  "result": true
-}
+Response:  
+{  
+  "result": true  
+}  
 
 ### API Endpoints (Simplified)
-Create Rule: /create_rule
+Create Rule: /create_rule  
 
-Method: POST
-Payload: { "rule_string": "(age > 30 AND department = 'Sales')" }
-Response: { "rule_id": "<rule_id>" }
+Method: POST  
+Payload: { "rule_string": "(age > 30 AND department = 'Sales')" }  
+Response: { "rule_id": "<rule_id>" }  
 
-Evaluate Rule: /evaluate_rule/<rule_id>
+Evaluate Rule: /evaluate_rule/<rule_id>  
 
-Method: POST
-Payload: { "user_data": {"age": 35, "department": "Sales"} }
-Response: { "result": true/false }
+Method: POST  
+Payload: { "user_data": {"age": 35, "department": "Sales"} }  
+Response: { "result": true/false }  
 
 #### Non-Functional Requirements
 1. SECURITY
