@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a New Rule</h1>
+        <form id="ruleForm">
+            <textarea id="ruleInput" placeholder="Enter rule (e.g., age > 30 AND salary > 50000)"></textarea>
+            <button type="button" onclick="submitRule()">Create Rule</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function submitRule() {
+            const ruleString = document.getElementById("ruleInput").value;
+
+            fetch("/create_rule", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ rule_string: ruleString })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("message").textContent = `Rule created with ID: ${data.rule_id}`;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>
