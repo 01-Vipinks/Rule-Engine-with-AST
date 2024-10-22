@@ -24,27 +24,23 @@ Before running this project, ensure you have the following installed:
 1. Clone the Repository:  
 &nbsp;- git clone https://github.com/your-username/rule-engine-ast.git  
 &nbsp;- cd rule-engine-ast
-2. Create a Virtual Environment:
-     
-    python -m venv venv  
-    source venv/bin/activate    # For Linux/Mac  
-    venv\Scripts\activate       # For Windows  
-3. Install Dependencies:
-     
-    pip install -r requirements.txt  
-4. Ensure MongoDB is Running:
-     
-    Make sure MongoDB is running locally at mongodb://localhost:27017/.  
-5. Run the Flask Application:
-      
-    python app.py  
+2. Create a Virtual Environment:  
+&nbsp;- python -m venv venv  
+&nbsp;- source venv/bin/activate &nbsp;# For Linux/Mac  
+&nbsp;- venv\Scripts\activate  &emsp;# For Windows  
+3. Install Dependencies:  
+&nbsp;- pip install -r requirements.txt  
+4. Ensure MongoDB is Running:  
+&nbsp;- Make sure MongoDB is running locally at mongodb://localhost:27017/.  
+5. Run the Flask Application:  
+&nbsp;- python app.py  
 The Flask server will start on http://127.0.0.1:5000.
 
 ### API ENPOINTS
 1. Create Rule  
-    Endpoint: /create_rule  
-    Method: POST  
-    Description: Creates a new rule from the provided rule string and stores it in MongoDB.  
+Endpoint: /create_rule  
+Method: POST  
+Description: Creates a new rule from the provided rule string and stores it in MongoDB.  
 Request Payload:  
 {  
   "rule_string": "(age > 30 AND department == 'Sales') OR (salary > 50000)"  
@@ -57,9 +53,9 @@ Response:
 }  
 
 2. Evaluate Rule  
-    Endpoint: /evaluate_rule/<rule_id>  
-    Method: POST  
-    Description: Evaluates a specific rule stored in the database against the provided user data.  
+Endpoint: /evaluate_rule/<rule_id>  
+Method: POST  
+Description: Evaluates a specific rule stored in the database against the provided user data.  
 Request Payload:  
 {  
   "user_data": {  
