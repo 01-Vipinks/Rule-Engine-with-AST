@@ -86,10 +86,10 @@ Evaluate Rule: /evaluate_rule/<rule_id>
 &nbsp;Response: { "result": true/false }  
 
 #### Non-Functional Requirements
-1. SECURITY
-    -Input Validation: All inputs from users are validated to prevent injection attacks, such as invalid characters or improper data types. Validation is enforced in API endpoints to ensure only well-formed rules are processed.
-    -MongoDB Security: Ensure MongoDB is secured with authentication if deployed in production. Using environment variables for sensitive data like the MongoDB URI is encouraged.
-    -Error Handling: Implemented detailed error handling to ensure that meaningful messages are returned in case of failure, such as invalid rules or database errors.
+1. SECURITY  
+&emsp;-Input Validation: All inputs from users are validated to prevent injection attacks, such as invalid characters or improper data types. Validation is enforced in API endpoints to ensure only well-formed rules are processed.  
+&emsp;-MongoDB Security: Ensure MongoDB is secured with authentication if deployed in production. Using environment variables for sensitive data like the MongoDB URI is encouraged.  
+&emsp;-Error Handling: Implemented detailed error handling to ensure that meaningful messages are returned in case of failure, such as invalid rules or database errors.  
 
 2. PERFORMANCE
     Optimized Rule Evaluation: AST is stored in a structured format (as dictionaries), minimizing the overhead of re-parsing rules during evaluation.
