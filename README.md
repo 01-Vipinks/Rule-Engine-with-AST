@@ -26,7 +26,7 @@ Before running this project, ensure you have the following installed:
 &nbsp;- cd rule-engine-ast
 2. Create a Virtual Environment:  
 &nbsp;- python -m venv venv  
-&nbsp;- source venv/bin/activate &nbsp;# For Linux/Mac  
+&nbsp;- source venv/bin/activate # For Linux/Mac  
 &nbsp;- venv\Scripts\activate  &emsp;# For Windows  
 3. Install Dependencies:  
 &nbsp;- pip install -r requirements.txt  
