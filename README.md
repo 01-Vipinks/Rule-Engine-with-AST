@@ -119,7 +119,10 @@ Step-by-Step Guide to Push Your Code to GitHub:
 
 ## DEVELOPMENT NOTES  
 &nbsp;-AST Representation: The project uses Python's ast module to parse rule strings into Abstract Syntax Trees (AST), allowing dynamic rule manipulation and efficient evaluation.  
-&nbsp;-MongoDB Structure: Rules are stored as a dictionary that represents the AST structure, allowing the system to recreate and evaluate rules directly from the database.  
+&nbsp;-MongoDB Structure: Rules are stored as a dictionary that represents the AST structure, allowing the system to recreate and evaluate rules directly from the database. 
+
+## License  
+This project is licensed under the MIT License.
 &nbsp;-Error Handling: The system includes checks for invalid rule formats and incorrect MongoDB ObjectIDs, ensuring that users receive helpful error messages when something goes wrong.  
 
 ## FUTURE IMPROVEMENTS  
